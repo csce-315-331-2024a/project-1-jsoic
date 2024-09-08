@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julian Stoicoviciu - Qualifications</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Link both stylesheets -->
+    <link id="main-style" rel="stylesheet" href="style.css"> <!-- Default -->
+    <link id="alternate-style" rel="stylesheet" href="style2.css" disabled> <!-- Alternate Style --></head></head>
 <body>
 
     <header>
@@ -18,6 +19,10 @@
                 <li><a href="tech.html">Tech</a></li>
             </ul>
         </nav>
+        <!-- Toggle Switch -->
+        <div class="toggle-container">
+            <label for="theme-toggle">Switch Theme</label>
+            <input type="checkbox" id="theme-toggle">
     </header>
 
     <section id="Qualifications" class="content-section">
@@ -28,11 +33,12 @@
                 <ul>
                     <li><strong>Education:</strong> Bachelors in Computing</li>
                     <li><strong>Technical Skills:</strong> Programming in Python, Rust, Java, C++, Web Development (HTML, CSS, JavaScript)</li>
-                    <li><strong>Certifications:</strong> Certified Ethical Hacker (CEH 2024), CCNA (2024)</li>
+                    <li><strong>Certifications:</strong> Certified Ethical Hacker (CEH 2024), CCNA (2024), Basics In Digital Forensics</li>
                     <li><strong>Areas of Interest:</strong> Cybersecurity, Cloud Computing, Software Development</li>
                 </ul>
                 <p>For more details, please download my resume:</p>
                 <a href="JS_RES.pdf" class="btn">Download Resume</a>
+                <p> <a href="DF_certificate.pdf">Link to Digital Forensics Cerrtificate</a></p>
             </div>
         </div>
     </section>
@@ -41,5 +47,7 @@
         <p>2024 Julian Stoicoviciu</p>
     </footer>
 
+    <!-- Link to the JavaScript file -->
+    <script src="functions.js"></script>
 </body>
 </html>

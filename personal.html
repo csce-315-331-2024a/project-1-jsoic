@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julian Stoicoviciu - Personal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Link both stylesheets -->
+    <link id="main-style" rel="stylesheet" href="style.css"> <!-- Default -->
+    <link id="alternate-style" rel="stylesheet" href="style2.css" disabled> <!-- Alternate Style --></head>
+
 <body>
 
     <header>
@@ -18,6 +20,10 @@
                 <li><a href="tech.html">Tech</a></li>
             </ul>
         </nav>
+        <!-- Toggle Switch -->
+        <div class="toggle-container">
+            <label for="theme-toggle">Switch Theme</label>
+            <input type="checkbox" id="theme-toggle">
     </header>
 
     <section id="Personal" class="content-section">
@@ -25,7 +31,12 @@
             <div class="about-text">
                 <h1>About Me</h1>
                 <p>My name is Julian Stoicoviciu, I am a passionate computing major from Austin, Texas with a strong interest in cybersecurity and software development. My journey into the world of technology began when I was in high school. I took a robotics course because I heard it was an easy ‘A’. In the class, I was introduced to coding and the world of technology. I learned to write code for my team’s robot to compete in the FIRST Tech competition. The single class I thought I’d take as an easy A soon became my passion. Since then, I have been dedicated to mastering the skills necessary to make a meaningful impact in the tech industry. Over the years, I have developed my abilities in various programming languages, including Python, Java, and C++, and have become proficient in web development using languages like HTML, CSS, and JavaScript.</p>
+                <p><a href="https://www.firstinspires.org/robotics/ftc">First Tech Link</a></p>
                 <p>Attending Texas A&M University was one of the best decisions I have ever made. In college, I was a part of the Track and Field team for whom I threw the javelin, have been an active member of the Cybersecurity club, and am currently studying to get my CCNA certification by the end of the semester. Most of my knowledge has come from my admirable professors, all of which contributed to making me the student I am today. </p>
+                <p><a href="https://12thman.com/sports/mens-track-and-field">Texas A&M Track and Field Page</a>
+                <p><a href="https://start.ciat.edu/get-cisco-certified-online?utm_campaign=Online%20%7C%20Programs%20-%20IT&utm_source=google&utm_medium=cpc&utm_content=Cisco%20-%20CCNA&utm_term=ccna%20certification&gad_source=1&gclid=Cj0KCQjwlvW2BhDyARIsADnIe-JsBIoXkYFIQlVgNypdwhBMaEUxFtQnqdOvTsXD5T-txdjsh_SsO5YaAnf1EALw_wcB">Info about CCNA Certification</a>
+
+                    
                 <p>Beyond academics, I have always been curious about the inner workings of different operating systems, and the realm of cybersecurity. In the future, I wish to work in the field and be a part of an incident response team. I chose my cybersecurity path when taking a digital forensics course in my sophomore year of college. My professor was an outstanding person and hearing his stories of his work and experiences inspired me to join the cybersecurity club and cultivate my skills.</p>
                 <p>When I'm not immersed in code or studying for exams, I enjoy playing the piano, reading philosophy and self-help-related topics, and being in the company of friends who share my interests. Attending Texas A&M has introduced me to so many interesting people who inspired me to explore and engage in things I never knew I’d enjoy. Ultimately making me the well-rounded person I am today.</p>
                 <p>This portfolio serves as a platform to showcase my skills, projects, and contributions, and I hope it provides you with a comprehensive overview of who I am and what I stand for.</p>
@@ -37,5 +48,7 @@
         <p>2024 Julian Stoicoviciu</p>
     </footer>
 
+    <!-- Link to the JavaScript file -->
+    <script src="functions.js"></script>
 </body>
 </html>

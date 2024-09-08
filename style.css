@@ -1,4 +1,5 @@
 /* General Styling */
+/* creates common font, color and margin/padding in body*/
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #0a0a0a;
@@ -7,7 +8,7 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
+/* Fixed header bar that stays in view of scroll */
 header {
     background: #1a1a1a;
     padding: 15px 0;
@@ -17,7 +18,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
-
+/*Add spacing between each navigation elem. for better readability*/
 nav ul {
     list-style: none;
     padding: 0;
@@ -28,10 +29,12 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0; /* Remove margin to ensure the full link area is clickable */
 }
 
 nav ul li a {
+    display: block; /* Make the entire anchor area clickable */
+    padding: 15px 20px; /* Add padding to increase the clickable area */
     color: #e0e0e0;
     text-decoration: none;
     font-weight: 600;
@@ -209,4 +212,74 @@ footer {
     .about-text p {
         font-size: 1.1em;
     }
+}
+/* Toggle Switch Style */
+.toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.toggle-container label {
+    font-size: 1em;
+    color: #ffffff; /* Change to match your design */
+    margin-right: 10px;
+}
+
+/* Toggle Switch Container Style */
+.toggle-container {
+    position: fixed; /* Fixed positioning to stay in place even when scrolling */
+    top: 20px; /* Adjust this to move it up or down */
+    left: 20px; /* Adjust this to control how far from the left edge it is */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+/* Toggle Switch Container Style */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex; /* Align items */
+    align-items: center; /* Vertically align */
+}
+
+/* Label Style */
+.toggle-container label {
+    font-size: 1em;
+    color: #ffffff; 
+    margin-right: 10px; /* Space between label and toggle switch */
+}
+
+/* Toggle Switch Style */
+#theme-toggle {
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #ccc;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+#theme-toggle:checked {
+    background-color: #000000;
+}
+
+#theme-toggle::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #030303;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:checked::before {
+    transform: translateX(20px);
 }

@@ -1,0 +1,205 @@
+/*Second Style sheet...*/
+/*Going for an A&M Themed background and more containers...*/
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f3f3f3;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* A&M Colors */
+:root {
+    --maroon: #500000;
+    --gray: #cccccc;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--maroon);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: var(--gray);
+}
+
+/* Section Styling */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 20px 60px 20px;
+    text-align: left;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h1 {
+    color: var(--maroon);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-text p, .about-text li {
+    color: #555555;
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    padding-left: 20px;
+}
+
+.about-text ul li {
+    list-style-type: disc;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    background-color: var(--maroon);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+}
+
+.btn:hover {
+    background-color: #670000;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--maroon);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid var(--gray);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .about-text h1 {
+        font-size: 2em;
+    }
+
+    .about-text p, .about-text li {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+}
+
+/* Toggle Switch Container Styling */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+}
+
+/* Label Styling */
+.toggle-container label {
+    font-size: 1em;
+    color: #ffffff;
+    margin-right: 10px; /* Space between label and toggle switch */
+}
+
+/* Toggle Switch Styling */
+#theme-toggle {
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    background-color: #ccc;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+#theme-toggle:checked {
+    background-color: #500000; 
+}
+
+#theme-toggle::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:checked::before {
+    transform: translateX(20px);
+}
