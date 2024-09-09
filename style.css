@@ -8,7 +8,7 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-/* Fixed header bar that stays in view of scroll */
+/* header bar that stays in view of scroll */
 header {
     background: #1a1a1a;
     padding: 15px 0;
@@ -29,12 +29,12 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0; /* Remove margin to ensure the full link area is clickable */
+    margin: 0; 
 }
 
 nav ul li a {
-    display: block; /* Make the entire anchor area clickable */
-    padding: 15px 20px; /* Add padding to increase the clickable area */
+    display: block; /* make clickable*/
+    padding: 15px 20px; 
     color: #e0e0e0;
     text-decoration: none;
     font-weight: 600;

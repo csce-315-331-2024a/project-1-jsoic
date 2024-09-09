@@ -1,4 +1,4 @@
-// JavaScript for Theme Toggle with Local Storage
+// Local Storage include
 const toggleSwitch = document.getElementById('theme-toggle');
 const mainStyle = document.getElementById('main-style');
 const alternateStyle = document.getElementById('alternate-style');
