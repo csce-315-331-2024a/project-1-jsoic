@@ -251,35 +251,52 @@ footer {
     margin-right: 10px; /* Space between label and toggle switch */
 }
 
-/* Toggle Switch Style */
+/* Toggle Switch Container */
+.toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.toggle-container label {
+    font-size: 1em;
+    color: #ffffff; /* Match your design */
+    margin-right: 10px;
+}
+
+/* Styling the Toggle Switch */
 #theme-toggle {
-    width: 40px;
-    height: 20px;
-    appearance: none;
+    appearance: none; /* Removes default appearance */
+    width: 50px;
+    height: 25px;
     background-color: #ccc;
-    outline: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 25px;
     position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
 }
 
 #theme-toggle:checked {
-    background-color: #000000;
+    background-color: #500000; /* A&M Maroon color when active */
 }
 
+/* Toggle slider */
 #theme-toggle::before {
     content: '';
     position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background-color: #030303;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
     border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
     transition: transform 0.3s ease;
 }
 
 #theme-toggle:checked::before {
-    transform: translateX(20px);
+    transform: translateX(25px); 
 }
