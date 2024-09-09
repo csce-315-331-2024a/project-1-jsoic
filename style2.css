@@ -183,13 +183,13 @@ footer {
 
 .toggle-container label {
     font-size: 1em;
-    color: #ffffff; /* Match your design */
+    color: #ffffff; 
     margin-right: 10px;
 }
 
 /* Styling the Toggle Switch */
 #theme-toggle {
-    appearance: none; /* Removes default appearance */
+    appearance: none;
     width: 50px;
     height: 25px;
     background-color: #ccc;
@@ -204,7 +204,7 @@ footer {
     background-color: #500000; /* A&M Maroon color when active */
 }
 
-/* Toggle slider (the circle inside the switch) */
+/* Toggle slider*/
 #theme-toggle::before {
     content: '';
     position: absolute;

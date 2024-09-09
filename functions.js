@@ -20,8 +20,8 @@ function switchTheme(isAlternate) {
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'alternate') {
-        toggleSwitch.checked = true;  // Set the toggle to 'on'
-        switchTheme(true);  // Apply the alternate theme
+        toggleSwitch.checked = true;  // Set toggle to 'on'
+        switchTheme(true);  // Apply alternate theme
     } else {
         toggleSwitch.checked = false;  // Set the toggle to 'off'
         switchTheme(false);  // Apply the default theme
